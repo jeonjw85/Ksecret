@@ -1,0 +1,15 @@
+AGENTS.md
+bin/
+coverage.out
+coverage.html
+*.test
+*.prof
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+.env
+.env.local
+results.sarif
+.omo/
