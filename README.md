@@ -23,7 +23,7 @@ kr-toss              심각     hits.env:11:6
 
 ## 설치
 
-### 일반 설치
+### 일반 설치 (macOS / Linux)
 
 ```bash
 curl -sSfL https://raw.githubusercontent.com/jeonjw85/Ksecret/main/scripts/install.sh | sh
@@ -36,6 +36,8 @@ curl -sSfL https://raw.githubusercontent.com/jeonjw85/Ksecret/main/scripts/insta
 ```bash
 go install github.com/jeonjw85/Ksecret@latest
 ```
+
+> Windows는 위 `go install` 을 이용하세요 (install.sh 미지원)
 
 ## 사용법
 
@@ -57,6 +59,8 @@ ksecret install --pre-commit                         # pre-commit 훅 설치
 ### pre-commit
 
 `ksecret install --pre-commit` 은 `.git/hooks/pre-commit` 에 staged 파일만 스캔하는 훅을 넣어 커밋할 때만 돌아갑니다
+
+> 훅은 `#!/bin/sh` 스크립트입니다. Windows에서는 Git for Windows(Git Bash)가 있어야 동작합니다 — Git 기본 설치에 포함되어 있습니다.
 
 직접 쓰려면:
 
