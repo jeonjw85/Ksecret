@@ -60,8 +60,6 @@ ksecret install --pre-commit                         # pre-commit 훅 설치
 
 `ksecret install --pre-commit` 은 `.git/hooks/pre-commit` 에 staged 파일만 스캔하는 훅을 넣어 커밋할 때만 돌아갑니다
 
-> 훅은 `#!/bin/sh` 스크립트입니다. Windows에서는 Git for Windows(Git Bash)가 있어야 동작합니다 — Git 기본 설치에 포함되어 있습니다.
-
 직접 쓰려면:
 
 ```bash
